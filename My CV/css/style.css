@@ -1,0 +1,100 @@
+* {
+  background-color: aliceblue;
+}
+
+.photo {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+}
+.signature p {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+}
+hr {
+  width: 20%;
+  border-style: ridge solid dotted dashed;
+  border-width: 1px;
+  align-items: center;
+}
+/* synopsis */
+.synopsis h4 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+.synopsis {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(65, 18, 233);
+  text-align: justify;
+}
+/* Personal Qualities */
+.qualities h4 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+.qualities {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(65, 18, 233);
+  text-align: justify;
+}
+.expertice h4 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+.expertice {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(65, 18, 233);
+  text-align: justify;
+}
+.technical h4 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+.technical {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(65, 18, 233);
+  text-align: justify;
+}
+.acedemic h4 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+.acedemic {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(65, 18, 233);
+  text-align: justify;
+}
+.personal h4 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: blueviolet;
+  text-align: center;
+  font-weight: bold;
+}
+.personal {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(65, 18, 233);
+  text-align: justify;
+}
