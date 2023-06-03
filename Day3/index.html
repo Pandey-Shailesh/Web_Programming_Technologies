@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BOOTSTRAP5</title>
+    <title>Bootstrap5</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!-- menu bar  -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="">
           <img
@@ -32,97 +38,256 @@
         <div class="collapse navbar-collapse" id="mynavbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">Home</a>
+              <a class="nav-link" href=""
+                ><i class="fa-solid fa-house"></i>&nbsp;Home</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#contactdetails">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Service</a>
             </li>
           </ul>
-          <div class="d-flex flex-row  text-white">
-            <div class="p-2 ">Login</div>
-            <div class="p-2 ">Register</div>
+          <div class="d-flex text-white">
+            <a
+              href=""
+              class="p-2 ms-auto login"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModel"
+              ><i class="fa-solid fa-right-to-bracket"></i>&nbsp;Login</a
+            >
+            <a
+              href=""
+              class="p-2 register"
+              data-bs-toggle="modal"
+              data-bs-target="#registerModel"
+            >
+              <i class="fa-solid fa-registered"></i>&nbsp;Register</a
+            >
           </div>
         </div>
       </div>
     </nav>
-
-    <br />
-    <br />
-    <br />
-    <br />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <br />
-    <br />
-    <br />
-    <br />
-
-    <div class="row text-center">
-      <div class="col bg-danger">Top Tutorials</div>
-      <div class="col bg-secondary">Top References</div>
-      <div class="col bg-info">Top Examples</div>
-      <div class="col bg-warning">Get Certified</div>
+    <!-- Header Section  -->
+    <section class="header-section">
+      <div class="centre-div">
+        <h2 class="text-center text-white pt-5">Best Website Design Place!</h2>
+        <h3 class="text-center text-white">
+          All Website creation available here!
+        </h3>
+        <br />
+        <br />
+        <div class="header-buttons">
+          <a href="" class="btn btn-outline-warning">Register</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Form -->
+    <div class="row bg-light" id="contactdetails">
+      <div class="col-sm-4 container pt-5">
+        <form action="/action_page.php">
+          <div class="mb-3 mt-3">
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter Name"
+              name="username"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              name="email"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="mobile"
+              placeholder="Enter mobile no"
+              name="mobile"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="col-sm-4 container pt-5">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.033383542465!2d77.28908077403975!3d28.53871627571609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce401fad8e0dd%3A0x99e1b49ade1e0b60!2sC-DAC%20Delhi!5e0!3m2!1sen!2sin!4v1685696755080!5m2!1sen!2sin"
+          width="500"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
-    <div class="row text-center">
-      <div class="col-sm-3">
-        <a href="">html Tutorials</a><br />
-        <a href="">css Tutorials</a><br />
-        <a href="">js Tutorials</a><br />
-        <a href="">pyton Tutorials</a><br />
-        <a href="">java Tutorials</a><br />
-        <a href="">c++ Tutorials</a><br />
+    <!-- Login Models -->
+    <div class="modal fade" id="loginModel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-info">
+            <h4 class="modal-title">Login</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body bg-light">
+            <form action="/action_page.php">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter email"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter password"
+                  name="pswd"
+                />
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="remember"
+                  />
+                  Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer bg-info">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-3">
-        <a href="">html References</a><br />
-        <a href="">css References</a><br />
-        <a href="">js References</a><br />
-        <a href="">pyton References</a><br />
-        <a href="">java References</a><br />
-        <a href="">c++ References</a><br />
-      </div>
-      <div class="col-sm-3">
-        <a href="">html Examples</a><br />
-        <a href="">css Examples</a><br />
-        <a href="">js Examples</a><br />
-        <a href="">pyton Examples</a><br />
-        <a href="">java Examples</a><br />
-        <a href="">c++ Examples</a><br />
-      </div>
-      <div class="col-sm-3">
-        <a href="">html</a><br />
-        <a href="">css Certified</a><br />
-        <a href="">js Certified</a><br />
-        <a href="">pyton Certified</a><br />
-        <a href="">java Certified</a><br />
-        <a href="">c++ Certified</a><br />
+    </div>
+    <!-- Register Model -->
+    <div class="modal fade" id="registerModel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header bg-info">
+            <h4 class="modal-title">Register</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <!-- Modal body -->
+          <div class="modal-body bg-light">
+            <form action="/action_page.php">
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label" required>Name:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Enter name"
+                  name="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label" required>Username:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter username"
+                  name="pswd"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label" required
+                  >Mobile Number:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter mobile number"
+                  name="pswd"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label" required>Email:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter email"
+                  name="pswd"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label" required>Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="pwd"
+                  placeholder="Enter password"
+                  name="pswd"
+                />
+              </div>
+              <p>
+                By creating an account you agree to our
+                <a href="#">Terms & Privacy</a>.
+              </p>
+              <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+          </div>
+          <div class="container signin bg-opacity-50">
+            <p>
+              Already have an account?
+              <a href="#" data-bs-toggle="modal" data-bs-target="#loginModel"
+                >Sign in</a
+              >.
+            </p>
+          </div>
+          <!-- Modal footer -->
+          <div class="modal-footer bg-info">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
