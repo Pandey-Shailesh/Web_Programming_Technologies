@@ -42,3 +42,8 @@
     background-color: #f1f1f1;
     text-align: center;
   }
+  .header-buttons{
+position:absolute;
+top: 40%;
+left: 48%;
+  }
