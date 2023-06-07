@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registraion Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form
+      name="contactForm"
+      onsubmit="return validateForm()"
+      action="/welcome.html"
+      method="post">
+      <h2>Application Form</h2>
+      <div class="row">
+        <label>First Name</label>
+        <input type="text" name="fname" />
+        <div class="error" id="fnameErr"></div>
+      </div>
+      <div class="row">
+        <label>Last Name</label>
+        <input type="text" name="lname" />
+        <div class="error" id="lnameErr"></div>
+      </div>
+      <div class="row">
+        <label>Email</label>
+        <input type="text" name="email" />
+        <div class="error" id="emailErr"></div>
+      </div>
+      <div class="row">
+        <label>Mobile</label>
+        <input type="text" name="mobile" maxlength="10" />
+        <div class="error" id="mobileErr"></div>
+      </div>
+      <div class="row">
+        <label>Country</label>
+        <select name="country" style="color: green">
+          <option>Select</option>
+          <option>Australia</option>
+          <option>India</option>
+          <option>Papua New Guinea</option>
+          <option>United States of America</option>
+          <option>United Kingdom</option>
+        </select>
+        <div class="error" id="countryErr"></div>
+      </div>
+      <div class="row">
+        <label>Gender</label>
+        <div class="form-inline">
+          <label>
+            <input type="radio" name="gender" value="male" />
+            Male</label
+          >
+          <label>
+            <input type="radio" name="gender" value="female" />
+            Female</label
+          >
+        </div>
+        <div class="error" id="genderErr"></div>
+      </div>
+      <div class="row">
+        <label
+          >Hobbies
+          <i>(Optional)</i>
+        </label>
+        <div class="form-inline">
+          <label
+            ><input type="checkbox" name="hobbies[]" value="sports" />
+            Music</label
+          >
+          <label
+            ><input type="checkbox" name="hobbies[]" value="movies" />
+            Movies</label
+          >
+          <label
+            ><input type="checkbox" name="hobbies[]" value="music" />
+            Dancing</label
+          >
+        </div>
+      </div>
+      <div class="form-inline">
+        <input type="checkbox" name="terms" value="" />
+        <label
+          >I accept the
+          <u>Terms & Condition.</u>
+        </label>
+        <div class="error" id="termsErr"></div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <script src="js/formvalidation.js"></script>
+  </body>
+</html>
