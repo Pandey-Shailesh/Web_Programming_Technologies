@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Counter</title>
+  </head>
+  <body>
+    <h1>Ticket Counter</h1>
+    <form action="">
+      <div>
+        <table>
+          <tr>
+            <td>Movie Name</td>
+            <td>
+              <select name="movie" id="movie_id">
+                <option value="">Select Movie</option>
+                <option value="Iron Man">Iron Man</option>
+                <option value="Thor">Thor</option>
+                <option value="Caption America">Caption America</option>
+                <option value="Dr.Strange">Dr. Strange</option>
+                <option value="SpiderMan">SpiderMan</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Date</td>
+            <td>
+              <select name="date" id="date_id">
+                <option value="">Select Date</option>
+                <option value="day1">02/06/2023</option>
+                <option value="day2">03/06/2023</option>
+                <option value="day3">04/06/2023</option>
+                <option value="day4">05/06/2023</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td>
+              <select name="time" id="time_id">
+                <option value="">Select Time</option>
+                <option value="time1">06:00 AM</option>
+                <option value="time2">08:00 AM</option>
+                <option value="time3">12:00 PM</option>
+                <option value="time4">03:00 PM</option>
+                <option value="time5">08:00 PM</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Please enter thr number of tickets</td>
+            <td>
+              <input type="text" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div container="">
+        <button>Calculate Amount</button>
+        <div>You have booked <i>amount</i> tickets</div>
+        <div>Total Price :</div>
+      </div>
+    </form>
+  </body>
+</html>
