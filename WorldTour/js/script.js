@@ -26,23 +26,33 @@ function getCity() {
 }
 
 function view() {
+  country = opt.value;
   parks = opt2.value;
-
-try {
-    if (parks == "1") {
-        throw "Err1";
-      } else {
-        throw "Err2";
-      }
+try{
+  if (country == "1" || parks =="1") {
+    throw "Err1";
+  } else if (price1 < 0) {
+    throw "Err2";
+  } else if (isNaN(price1) || price1 == 0) {
+    throw "Err3";
+  } else {
+    priceDisplay.innerHTML = "Total Ticket Cost is: " + price1;
+    tickets.innerHTML = "You have booked " + tick.value + "ticket(s)";
+    tick.value = "";
+  }
 } catch (error) {
-    if (error == "Err1") {
-              alert("Please enter the number of tickets");
-            }
+  if (error == "Err1") {
+    alert("Please enter the number of tickets");
+  }
+  if (error == "Err2") {
+    alert(
+      "Number of tickets should not be negative! Please enter valid no of tickets"
+    );
+  }
+  if (error == "Err3") {
+    alert("Number of tickets should be greater than zero");
+  }
 }
-
-
-
-
 
 
 }

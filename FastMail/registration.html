@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <center>
+      <h1 style="color: blue;">Welcome to Fast Mail</h1>
+      <form
+        name="registrationForm"
+        id="registrationForm"
+        onsubmit="return registrationForm()"
+      >
+        <br /><br />
+
+        <table>
+          <tr>
+            <td><label for="firstName"> Name:</label></td>
+            <td>
+              <input type="text" id="firstName" name="firstName" /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="fastMailId">Choose your FastMail ID:</label></td>
+            <td>
+              <input
+                type="text"
+                id="fastMailId"
+                name="fastMailId"
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Choose Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="confirmPassword">Confirm Your Password:</label></td>
+            <td>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+              /><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="dob">Date of Birth:</label></td>
+            <td><input type="date" id="dob" name="dob" /><br /><br /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="gender">Gender:</label>
+            </td>
+            <td>
+              <select id="gender" name="gender">
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option></select
+              ><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Country:</label></td>
+            <td>
+              <select id="country" name="country">
+                <option value="">Select</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="australia">Australia</option></select
+              ><br /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <a href="thankyou.html"><input type="submit" value="Register Me" /></a>
+            </td>
+            <td>
+              <input type="reset" value="Reset" onclick="resetForm()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

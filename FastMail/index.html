@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fast Mail</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <center>
+
+    <h1>Welcome to Fast Mail</h1>
+    <br />
+    <div class="container" style="display: block; background-color: yellow">
+      Sign in to Fast Mail Account
+    </div>
+    <br />
+    <form name="SignIn" onsubmit="return validateForm()">
+      <label for="username"> Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+
+      <label for="password">Password:</label>
+      <input type="text" id="password" name="password"><br><br>
+
+      <input type="checkbox" id="remember" name="remember">
+      <label >Remember me on this computer </label>
+      <br><br>
+
+      <a href="welcomeuser.html"> <input type="submit" value="Sig In" onclick="validateForm()"></a>
+      <br><br>
+
+      <label for="password">New User?</label>
+      <label for="password" style="text-decoration: underline;" > <a href="registration.html">Click here</a> </label>
+
+
+    </form>
+    </center>
+<script src="./js/script.js"></script>
+  </body>
+</html>
