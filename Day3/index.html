@@ -87,85 +87,121 @@
       </div>
     </section>
 
-<hr>
+    <hr />
 
     <!-- Cards -->
 
     <div class="container">
       <div class="row">
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div class="card" style="width: 400px">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
           <div class="card-body">
             <h4 class="card-title">John Doe</h4>
             <p class="card-text">Some example text.</p>
             <a href="#" class="btn btn-primary">See Profile</a>
           </div>
         </div>
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div class="card" style="width: 400px">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
           <div class="card-body">
             <h4 class="card-title">John Doe</h4>
             <p class="card-text">Some example text.</p>
             <a href="#" class="btn btn-primary">See Profile</a>
           </div>
         </div>
-        <div class="card" style="width:400px">
-          <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+        <div class="card" style="width: 400px">
+          <img class="card-img-top" src="img_avatar1.png" alt="Card image" />
           <div class="card-body">
             <h4 class="card-title">John Doe</h4>
             <p class="card-text">Some example text.</p>
             <a href="#" class="btn btn-primary">See Profile</a>
           </div>
         </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- Indicators/dots -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide-to="2"
+        ></button>
+      </div>
+
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/business.jpg"
+            alt="Los Angeles"
+            class="d-block"
+            style="width: 100%; height: 40%"
+          />
+          <div class="carousel-caption">
+            <h3>Los Angeles</h3>
+            <p>We had such a great time in LA!</p>
+          </div>
         </div>
-    </div>
-
-<hr>
-
-<!-- Carousel -->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
-
-  <!-- The slideshow/carousel -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/business.jpg" alt="Los Angeles" class="d-block" style="width:100%;height: 40%;">
-      <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>We had such a great time in LA!</p>
+        <div class="carousel-item">
+          <img
+            src="images/business4.jpg"
+            alt="Chicago"
+            class="d-block"
+            style="width: 100%; height: 40%"
+          />
+          <div class="carousel-caption">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/business6.jpg"
+            alt="New York"
+            class="d-block"
+            style="width: 100%; height: 40%"
+          />
+          <div class="carousel-caption">
+            <h3>New York</h3>
+            <p>We love the Big Apple!</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/business4.jpg" alt="Chicago" class="d-block" style="width:100%;height: 40%;">
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="images/business6.jpg" alt="New York" class="d-block" style="width:100%;height: 40%;">
-      <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
+      <!-- Left and right controls/icons -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
 
     <!-- Contact Form -->
     <div class="row bg-light" id="contactdetails">
@@ -239,6 +275,7 @@
                   placeholder="Enter email"
                   name="email"
                 />
+                <div id="user_error"></div>
               </div>
               <div class="mb-3">
                 <label for="pwd" class="form-label">Password:</label>
@@ -249,6 +286,7 @@
                   placeholder="Enter password"
                   name="pswd"
                 />
+                <div id="pass_error"></div>
               </div>
               <div class="form-check mb-3">
                 <label class="form-check-label">
@@ -260,7 +298,9 @@
                   Remember me
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary">Login</button>
+              <button type="submit" id="submit" class="btn btn-primary">
+                Login
+              </button>
             </form>
           </div>
           <!-- Modal footer -->
@@ -373,24 +413,30 @@
       </div>
     </div>
 
+    <!-- FOOTER -->
 
-<!-- FOOTER -->
-
-    <footer id="footer" style="color: rgb(7, 7, 7); background-color: gray;height: 700px; text-align: center;">
+    <footer
+      id="footer"
+      style="
+        color: rgb(7, 7, 7);
+        background-color: gray;
+        height: 700px;
+        text-align: center;
+      "
+    >
       <div class="container">
-        <div class="row" style="padding: 100px;">
-
+        <div class="row" style="padding: 100px">
           <div class="col-md-4 col-sm-6">
             <div class="footer-info">
               <div class="section-title">
                 <h2>Headquarter</h2>
               </div>
               <address>
-                <p>Centre of Excellence in IT,
-                  <br>First Floor,
-                  <br>Student Union Building, Waigani Campus,
-                  <br>The University of Papua New Guinea,
-                  <br>P.O. Box 320, NCD 134</p>
+                <p>
+                  Centre of Excellence in IT, <br />First Floor, <br />Student
+                  Union Building, Waigani Campus, <br />The University of Papua
+                  New Guinea, <br />P.O. Box 320, NCD 134
+                </p>
               </address>
 
               <div class="copyright-text">
@@ -426,7 +472,6 @@
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
 
@@ -437,20 +482,64 @@
               </div>
               <div>
                 <div class="form-group">
-                  <form action="https://github.com/ceit-png/ceit-png.github.io/raw/master/Brochure.pdf" method="get">
-                    <p>Download the brochure to get more about the centre and its programs</p>
-                    <a href="https://github.com/ceit-png/ceit-png.github.io/raw/master/Brochure.pdf" class="section-btn btn btn-default smoothScroll">Download</a>
+                  <form
+                    action="https://github.com/ceit-png/ceit-png.github.io/raw/master/Brochure.pdf"
+                    method="get"
+                  >
+                    <p>
+                      Download the brochure to get more about the centre and its
+                      programs
+                    </p>
+                    <a
+                      href="https://github.com/ceit-png/ceit-png.github.io/raw/master/Brochure.pdf"
+                      class="section-btn btn btn-default smoothScroll"
+                      >Download</a
+                    >
                   </form>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </footer>
 
+    <!-- jQueryCode starts -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    >
+      $(document).ready(function () {
+            $("#submit").click(function () {
+              var user = $("#email").val();
+              var pass = $("#pwd").val();
+              if (user == "") {
+                $("#user_error").html("* Please enter email");
+                $("#user_error").css("color", "red");
+                return false;
+              }
+              if (user.length <= 5 || user.length >= 30) {
+                $("#user_error").html("* Username must be between 6 and 30 chars!");
+                $("#user_error").css("color", "red");
+                return false;
+              } else {
+                $("#pwd").click(function () {
+                  $("#user_error").html("");
+                  return true;
+                });
+              }
+              if (pass == "") {
+                $("#pass_error").html("* Please enter password");
+                $("#pass_error").css("color", "red");
+                return false;
+              }
+              if (pass.length <= 5) {
+                $("#pass_error").html("* password must be greater than 6!");
+                $("#pass_error").css("color", "red");
+                return false;
+              }
+            });
+          });
+    </script>
   </body>
 </html>
