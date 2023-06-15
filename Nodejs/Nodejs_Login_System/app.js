@@ -1,11 +1,13 @@
 const express = require("express");
 const mysql = require("mysql");
 const dotenv = require("dotenv");
+const cookieParser = require("cookie-parser");
 const path = require("path");
 
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 app.set("view engine", "hbs");
