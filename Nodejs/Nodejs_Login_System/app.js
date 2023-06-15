@@ -5,6 +5,9 @@ const path = require("path");
 
 const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 app.set("view engine", "hbs");
 dotenv.config({ path: "./.env" });
 const publicDirectory = path.join(__dirname, "./public");
